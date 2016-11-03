@@ -9,10 +9,20 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>ContactListTests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>005096631BF1F266002B7EA9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>005096A11BF1FC1E002B7EA9</key>
 		<dict>
 			<key>primary</key>
 			<true/>

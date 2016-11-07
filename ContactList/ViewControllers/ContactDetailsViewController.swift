@@ -46,6 +46,7 @@ class ContactDetailsViewController: UIViewController {
         
         self.tableContactDetails.delegate = self
         self.tableContactDetails.dataSource = self
+        self.tableContactDetails.accessibilityLabel = "ContactDetailsTable"
         
     }
     
@@ -115,6 +116,8 @@ extension ContactDetailsViewController: UITableViewDelegate, UITableViewDataSour
         
         labelTitle.text = entry.title
         labelValue.text = entry.value
+        
+        cell.accessibilityLabel = entry.title
         
         return cell
     }

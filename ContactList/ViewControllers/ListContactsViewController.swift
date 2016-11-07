@@ -17,6 +17,7 @@ class ListContactsViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.tableView.accessibilityLabel = "ContactListTable"
         dataProvider = ContactListDataProvider(tableView: self.tableView, searchBar: self.searchBar)
         
         let defaults: NSUserDefaults = NSUserDefaults.standardUserDefaults()

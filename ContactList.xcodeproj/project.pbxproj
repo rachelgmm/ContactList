@@ -57,7 +57,18 @@
 		005096CF1BF21C89002B7EA9 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005096CD1BF21C1E002B7EA9 /* APIError.swift */; };
 		005096D41BF21EE2002B7EA9 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005096D31BF21EE2002B7EA9 /* Utils.swift */; };
 		005096D81BF21F83002B7EA9 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005096D31BF21EE2002B7EA9 /* Utils.swift */; };
+		4DC9F0EB1DD03A0B005692D8 /* ContactListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC9F0EA1DD03A0B005692D8 /* ContactListUITests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4DC9F0ED1DD03A0B005692D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0050965C1BF1F266002B7EA9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 005096631BF1F266002B7EA9;
+			remoteInfo = ContactList;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		0050968E1BF1F90D002B7EA9 /* Embed Frameworks */ = {
@@ -120,6 +131,9 @@
 		005096CA1BF2165F002B7EA9 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		005096CD1BF21C1E002B7EA9 /* APIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		005096D31BF21EE2002B7EA9 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		4DC9F0E81DD03A0B005692D8 /* ContactListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContactListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DC9F0EA1DD03A0B005692D8 /* ContactListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListUITests.swift; sourceTree = "<group>"; };
+		4DC9F0EC1DD03A0B005692D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +159,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4DC9F0E51DD03A0B005692D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -158,6 +179,7 @@
 				005096871BF1F90D002B7EA9 /* SwiftyJSON.framework */,
 				005096661BF1F266002B7EA9 /* ContactList */,
 				005096A31BF1FC1F002B7EA9 /* ContactListTests */,
+				4DC9F0E91DD03A0B005692D8 /* ContactListUITests */,
 				005096651BF1F266002B7EA9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -167,6 +189,7 @@
 			children = (
 				005096641BF1F266002B7EA9 /* ContactList.app */,
 				005096A21BF1FC1E002B7EA9 /* ContactListTests.xctest */,
+				4DC9F0E81DD03A0B005692D8 /* ContactListUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -258,6 +281,15 @@
 			path = ContactListTests/Fixtures;
 			sourceTree = SOURCE_ROOT;
 		};
+		4DC9F0E91DD03A0B005692D8 /* ContactListUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4DC9F0EA1DD03A0B005692D8 /* ContactListUITests.swift */,
+				4DC9F0EC1DD03A0B005692D8 /* Info.plist */,
+			);
+			path = ContactListUITests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -297,13 +329,31 @@
 			productReference = 005096A21BF1FC1E002B7EA9 /* ContactListTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		4DC9F0E71DD03A0B005692D8 /* ContactListUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DC9F0F11DD03A0B005692D8 /* Build configuration list for PBXNativeTarget "ContactListUITests" */;
+			buildPhases = (
+				4DC9F0E41DD03A0B005692D8 /* Sources */,
+				4DC9F0E51DD03A0B005692D8 /* Frameworks */,
+				4DC9F0E61DD03A0B005692D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4DC9F0EE1DD03A0B005692D8 /* PBXTargetDependency */,
+			);
+			name = ContactListUITests;
+			productName = ContactListUITests;
+			productReference = 4DC9F0E81DD03A0B005692D8 /* ContactListUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		0050965C1BF1F266002B7EA9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0710;
+				LastSwiftUpdateCheck = 0800;
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Nishadh Shrestha";
 				TargetAttributes = {
@@ -313,6 +363,11 @@
 					};
 					005096A11BF1FC1E002B7EA9 = {
 						CreatedOnToolsVersion = 7.1;
+					};
+					4DC9F0E71DD03A0B005692D8 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 005096631BF1F266002B7EA9;
 					};
 				};
 			};
@@ -331,6 +386,7 @@
 			targets = (
 				005096631BF1F266002B7EA9 /* ContactList */,
 				005096A11BF1FC1E002B7EA9 /* ContactListTests */,
+				4DC9F0E71DD03A0B005692D8 /* ContactListUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -351,6 +407,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				005096AC1BF21377002B7EA9 /* getusers.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DC9F0E61DD03A0B005692D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,7 +465,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4DC9F0E41DD03A0B005692D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DC9F0EB1DD03A0B005692D8 /* ContactListUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4DC9F0EE1DD03A0B005692D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 005096631BF1F266002B7EA9 /* ContactList */;
+			targetProxy = 4DC9F0ED1DD03A0B005692D8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		0050966B1BF1F266002B7EA9 /* Main.storyboard */ = {
@@ -574,6 +653,39 @@
 			};
 			name = Release;
 		};
+		4DC9F0EF1DD03A0B005692D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				INFOPLIST_FILE = ContactListUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = rachelgmm.ContactListUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = ContactList;
+			};
+			name = Debug;
+		};
+		4DC9F0F01DD03A0B005692D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				INFOPLIST_FILE = ContactListUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = rachelgmm.ContactListUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = ContactList;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -603,6 +715,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		4DC9F0F11DD03A0B005692D8 /* Build configuration list for PBXNativeTarget "ContactListUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DC9F0EF1DD03A0B005692D8 /* Debug */,
+				4DC9F0F01DD03A0B005692D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

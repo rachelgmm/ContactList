@@ -7,6 +7,7 @@
 //
 
 import XCTest
+import Nimble
 
 class ContactListUITests: XCTestCase {
         
@@ -31,6 +32,18 @@ class ContactListUITests: XCTestCase {
     func testExample() {
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        let app = XCUIApplication()
+        app.tables["ContactListTable"].staticTexts["Clementine Bauch"].tap()
+        
+        app.navigationBars["Clementine Bauch"].staticTexts["Clementine Bauch"].tap()
+        
+        let contactdetailstableTable = XCUIApplication().tables["ContactDetailsTable"]
+        let nameStaticText = contactdetailstableTable.cells.containing(.staticText, identifier:"Clementine Bauch").staticTexts["Name"]
+        nameStaticText.tap()
+        
+        contactdetailstableTable.staticTexts["Clementine Bauch"].tap()
+        contactdetailstableTable.staticTexts["Street"].tap()
+        contactdetailstableTable.staticTexts["Douglas Extension"].tap()
     }
     
 }

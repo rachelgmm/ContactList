@@ -59,6 +59,8 @@
 		005096D81BF21F83002B7EA9 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005096D31BF21EE2002B7EA9 /* Utils.swift */; };
 		4DA986531DD115FE00F13DE9 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4DA986511DD115FE00F13DE9 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4DA986541DD115FE00F13DE9 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4DA986521DD115FE00F13DE9 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4DB3F2321DD17D24001BB05F /* ContactListPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB3F2311DD17D24001BB05F /* ContactListPage.swift */; };
+		4DB3F2341DD1915F001BB05F /* ContactDetailsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB3F2331DD1915F001BB05F /* ContactDetailsPage.swift */; };
 		4DC9F0EB1DD03A0B005692D8 /* ContactListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC9F0EA1DD03A0B005692D8 /* ContactListUITests.swift */; };
 /* End PBXBuildFile section */
 
@@ -146,6 +148,8 @@
 		005096D31BF21EE2002B7EA9 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		4DA986511DD115FE00F13DE9 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		4DA986521DD115FE00F13DE9 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		4DB3F2311DD17D24001BB05F /* ContactListPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactListPage.swift; sourceTree = "<group>"; };
+		4DB3F2331DD1915F001BB05F /* ContactDetailsPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactDetailsPage.swift; sourceTree = "<group>"; };
 		4DC9F0E81DD03A0B005692D8 /* ContactListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContactListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DC9F0EA1DD03A0B005692D8 /* ContactListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListUITests.swift; sourceTree = "<group>"; };
 		4DC9F0EC1DD03A0B005692D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -298,9 +302,19 @@
 			path = ContactListTests/Fixtures;
 			sourceTree = SOURCE_ROOT;
 		};
+		4DB3F2301DD17CEB001BB05F /* Page */ = {
+			isa = PBXGroup;
+			children = (
+				4DB3F2311DD17D24001BB05F /* ContactListPage.swift */,
+				4DB3F2331DD1915F001BB05F /* ContactDetailsPage.swift */,
+			);
+			name = Page;
+			sourceTree = "<group>";
+		};
 		4DC9F0E91DD03A0B005692D8 /* ContactListUITests */ = {
 			isa = PBXGroup;
 			children = (
+				4DB3F2301DD17CEB001BB05F /* Page */,
 				4DC9F0EA1DD03A0B005692D8 /* ContactListUITests.swift */,
 				4DC9F0EC1DD03A0B005692D8 /* Info.plist */,
 			);
@@ -488,6 +502,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4DC9F0EB1DD03A0B005692D8 /* ContactListUITests.swift in Sources */,
+				4DB3F2341DD1915F001BB05F /* ContactDetailsPage.swift in Sources */,
+				4DB3F2321DD17D24001BB05F /* ContactListPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

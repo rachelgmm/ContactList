@@ -9,13 +9,7 @@
 import Foundation
 import XCTest
 
-class ContactListPage {
-    
-    var application: XCUIApplication = {
-        let app = XCUIApplication()
-        return app
-        
-    }()
+class ContactListPage: Page {
     
     func openContactDetails(contactName: String) -> ContactListPage {
         getContactListTable().staticTexts[contactName].tap()

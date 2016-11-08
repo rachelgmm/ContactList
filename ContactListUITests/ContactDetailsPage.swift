@@ -9,13 +9,7 @@
 import Foundation
 import XCTest
 
-class ContactDetailsPage {
-    
-    var application: XCUIApplication = {
-        let app = XCUIApplication()
-        return app
-        
-    }()
+class ContactDetailsPage: Page {
     
     func getContactDetail(field: String) -> String {
         return getContactDetailsTable().cells[field].staticTexts.elementBoundByIndex(1).label        

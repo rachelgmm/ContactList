@@ -57,6 +57,7 @@
 		005096CF1BF21C89002B7EA9 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005096CD1BF21C1E002B7EA9 /* APIError.swift */; };
 		005096D41BF21EE2002B7EA9 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005096D31BF21EE2002B7EA9 /* Utils.swift */; };
 		005096D81BF21F83002B7EA9 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005096D31BF21EE2002B7EA9 /* Utils.swift */; };
+		4D66578D1DD2682F00A935DF /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D66578C1DD2682F00A935DF /* Page.swift */; };
 		4DA986531DD115FE00F13DE9 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4DA986511DD115FE00F13DE9 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4DA986541DD115FE00F13DE9 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4DA986521DD115FE00F13DE9 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4DB3F2321DD17D24001BB05F /* ContactListPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB3F2311DD17D24001BB05F /* ContactListPage.swift */; };
@@ -146,6 +147,7 @@
 		005096CA1BF2165F002B7EA9 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		005096CD1BF21C1E002B7EA9 /* APIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		005096D31BF21EE2002B7EA9 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		4D66578C1DD2682F00A935DF /* Page.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
 		4DA986511DD115FE00F13DE9 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		4DA986521DD115FE00F13DE9 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		4DB3F2311DD17D24001BB05F /* ContactListPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactListPage.swift; sourceTree = "<group>"; };
@@ -307,6 +309,7 @@
 			children = (
 				4DB3F2311DD17D24001BB05F /* ContactListPage.swift */,
 				4DB3F2331DD1915F001BB05F /* ContactDetailsPage.swift */,
+				4D66578C1DD2682F00A935DF /* Page.swift */,
 			);
 			name = Page;
 			sourceTree = "<group>";
@@ -503,6 +506,7 @@
 			files = (
 				4DC9F0EB1DD03A0B005692D8 /* ContactListUITests.swift in Sources */,
 				4DB3F2341DD1915F001BB05F /* ContactDetailsPage.swift in Sources */,
+				4D66578D1DD2682F00A935DF /* Page.swift in Sources */,
 				4DB3F2321DD17D24001BB05F /* ContactListPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

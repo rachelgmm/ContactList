@@ -16,5 +16,9 @@ class Page {
         return app
         
     }()
+    
+    func launch() {
+        self.application.launch()
+    }
 
 }

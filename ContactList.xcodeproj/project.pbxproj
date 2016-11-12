@@ -61,6 +61,8 @@
 		4DC3C0201DD7B33C000A44A3 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4DC3C01D1DD7B33C000A44A3 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4DC3C0211DD7B33C000A44A3 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4DC3C01E1DD7B33C000A44A3 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4DC3C0221DD7B33C000A44A3 /* XCTest_Gherkin.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4DC3C01F1DD7B33C000A44A3 /* XCTest_Gherkin.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4DC3C0251DD7BB0C000A44A3 /* ContactListPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC3C0241DD7BB0C000A44A3 /* ContactListPage.swift */; };
+		4DC3C0271DD7BB17000A44A3 /* ContactDetailsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC3C0261DD7BB17000A44A3 /* ContactDetailsPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -152,6 +154,8 @@
 		4DC3C01D1DD7B33C000A44A3 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		4DC3C01E1DD7B33C000A44A3 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		4DC3C01F1DD7B33C000A44A3 /* XCTest_Gherkin.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest_Gherkin.framework; path = Carthage/Build/iOS/XCTest_Gherkin.framework; sourceTree = "<group>"; };
+		4DC3C0241DD7BB0C000A44A3 /* ContactListPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactListPage.swift; sourceTree = "<group>"; };
+		4DC3C0261DD7BB17000A44A3 /* ContactDetailsPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactDetailsPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -305,10 +309,20 @@
 		4DC3C0131DD7B2FB000A44A3 /* ContactListUITests */ = {
 			isa = PBXGroup;
 			children = (
+				4DC3C0231DD7BAFC000A44A3 /* Page */,
 				4DC3C0141DD7B2FB000A44A3 /* ContactListUITests.swift */,
 				4DC3C0161DD7B2FB000A44A3 /* Info.plist */,
 			);
 			path = ContactListUITests;
+			sourceTree = "<group>";
+		};
+		4DC3C0231DD7BAFC000A44A3 /* Page */ = {
+			isa = PBXGroup;
+			children = (
+				4DC3C0241DD7BB0C000A44A3 /* ContactListPage.swift */,
+				4DC3C0261DD7BB17000A44A3 /* ContactDetailsPage.swift */,
+			);
+			name = Page;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -492,6 +506,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4DC3C0151DD7B2FB000A44A3 /* ContactListUITests.swift in Sources */,
+				4DC3C0271DD7BB17000A44A3 /* ContactDetailsPage.swift in Sources */,
+				4DC3C0251DD7BB0C000A44A3 /* ContactListPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

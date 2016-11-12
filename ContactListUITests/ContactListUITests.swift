@@ -32,16 +32,11 @@ class ContactListUITests: XCTestCase {
     func testViewContactDetails() {
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+    ContactListPage().openContactDetails("Clementine Bauch")
         
-        let app = XCUIApplication()
-        app.tables["ContactListTable"].staticTexts["Clementine Bauch"].tap()
-        app.navigationBars["Clementine Bauch"].staticTexts["Clementine Bauch"].tap()
+        expect(ContactDetailsPage().getContactDetails("Name")).to(equal("Clementine Bauch"))
         
-        let contactDetailsTable = app.tables["ContactDetailsTable"]
-        
-        expect(contactDetailsTable.cells["Name"].staticTexts.elementBoundByIndex(1).label).to(equal("Clementine Bauch"))
-        
-        expect(contactDetailsTable.cells["City"].staticTexts.elementBoundByIndex(1).label).to(equal("McKenziehaven"))   
+        expect(ContactDetailsPage().getContactDetails("City")).to(equal("McKenziehaven"))
     }
     
 }

@@ -1,4 +1,7 @@
 github "Alamofire/Alamofire" "3.5.1"
+github "Quick/Nimble" "v4.1.0"
 github "AliSoftware/OHHTTPStubs" "5.2.2"
+github "Quick/Quick" "v0.9.3"
 github "TransitApp/SVProgressHUD" "2.0.3"
 github "SwiftyJSON/SwiftyJSON" "54017d514a87b2b855b407131292c510cdeb65f8"
+github "net-a-porter-mobile/XCTest-Gherkin" "6371c3e1667814e2f344e50ddfcb9db0caa28f37"

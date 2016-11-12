@@ -28,9 +28,23 @@ class ContactListUITests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
+    func testViewContactDetails() {
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        
+        let app = XCUIApplication()
+        
+//        print(app.debugDescription)
+        app.tables["ContactListTable"].staticTexts["Clementine Bauch"].tap()
+        app.navigationBars["Clementine Bauch"].staticTexts["Clementine Bauch"].tap()
+        
+//        print(app.debugDescription)
+        
+        let contactDetailsTable = app.tables["ContactDetailsTable"]
+        contactDetailsTable.staticTexts["Clementine Bauch"].tap()
+        contactDetailsTable.swipeUp()
+        contactDetailsTable.staticTexts["McKenziehaven"].tap()
+        
     }
     
 }

@@ -15,5 +15,9 @@ class Page {
         let app = XCUIApplication()
         return app
     }
+    
+    func launch() {
+        self.application.launch()
+    }
 
 }

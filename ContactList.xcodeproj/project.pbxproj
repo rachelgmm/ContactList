@@ -64,6 +64,7 @@
 		4DC3C0251DD7BB0C000A44A3 /* ContactListPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC3C0241DD7BB0C000A44A3 /* ContactListPage.swift */; };
 		4DC3C0271DD7BB17000A44A3 /* ContactDetailsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC3C0261DD7BB17000A44A3 /* ContactDetailsPage.swift */; };
 		4DC3C0291DD7BFDF000A44A3 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC3C0281DD7BFDF000A44A3 /* Page.swift */; };
+		4DC3C02B1DD7C10D000A44A3 /* ViewContactDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC3C02A1DD7C10D000A44A3 /* ViewContactDetails.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -158,6 +159,7 @@
 		4DC3C0241DD7BB0C000A44A3 /* ContactListPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactListPage.swift; sourceTree = "<group>"; };
 		4DC3C0261DD7BB17000A44A3 /* ContactDetailsPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactDetailsPage.swift; sourceTree = "<group>"; };
 		4DC3C0281DD7BFDF000A44A3 /* Page.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
+		4DC3C02A1DD7C10D000A44A3 /* ViewContactDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewContactDetails.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -314,6 +316,7 @@
 				4DC3C0231DD7BAFC000A44A3 /* Page */,
 				4DC3C0141DD7B2FB000A44A3 /* ContactListUITests.swift */,
 				4DC3C0161DD7B2FB000A44A3 /* Info.plist */,
+				4DC3C02A1DD7C10D000A44A3 /* ViewContactDetails.swift */,
 			);
 			path = ContactListUITests;
 			sourceTree = "<group>";
@@ -510,6 +513,7 @@
 			files = (
 				4DC3C0151DD7B2FB000A44A3 /* ContactListUITests.swift in Sources */,
 				4DC3C0291DD7BFDF000A44A3 /* Page.swift in Sources */,
+				4DC3C02B1DD7C10D000A44A3 /* ViewContactDetails.swift in Sources */,
 				4DC3C0271DD7BB17000A44A3 /* ContactDetailsPage.swift in Sources */,
 				4DC3C0251DD7BB0C000A44A3 /* ContactListPage.swift in Sources */,
 			);

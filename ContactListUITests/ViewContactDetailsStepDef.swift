@@ -16,6 +16,10 @@ class ViewContactDetailsStepDef : StepDefiner {
             // already setup
         }
         
+        step("I have a contact's name") {
+            // already setup
+        }
+        
         step("I open my contact list") {
             Page().launch()
         }
@@ -24,9 +28,14 @@ class ViewContactDetailsStepDef : StepDefiner {
             ContactListPage().openContactDetails("Clementine Bauch")
         }
         
-        step("I can see their city of address")
+        step("I can see the city of address")
         {
             expect(ContactDetailsPage().getContactDetails("City")).to(equal("McKenziehaven"))
         }
+        
+        step("I can see the name") {
+            expect(ContactDetailsPage().getContactDetails("Name")).to(equal("Clementine Bauch"))
+        }
+        
     }
 }

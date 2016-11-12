@@ -15,6 +15,21 @@ class viewContactDetailsFeature: XCTestCase {
         Given("I have a contact's city of address")
         And("I open my contact list")
         When("I tap on the contact")
-        Then("I can see their city of address")
+        Then("I can see the city of address")
+    }
+    
+    func testViewContactDetails() {
+        Examples(
+            [ "contact detail" ],
+            [ "name" ],
+            [ "city of address" ]
+        )
+        
+        Outline {
+            Given("I have a contact's <contact detail>")
+            And("I open my contact list")
+            When("I tap on the contact")
+            Then("I can see the <contact detail>")
+        }
     }
 }

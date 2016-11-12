@@ -63,6 +63,7 @@
 		4DC3C0221DD7B33C000A44A3 /* XCTest_Gherkin.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4DC3C01F1DD7B33C000A44A3 /* XCTest_Gherkin.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4DC3C0251DD7BB0C000A44A3 /* ContactListPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC3C0241DD7BB0C000A44A3 /* ContactListPage.swift */; };
 		4DC3C0271DD7BB17000A44A3 /* ContactDetailsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC3C0261DD7BB17000A44A3 /* ContactDetailsPage.swift */; };
+		4DC3C0291DD7BFDF000A44A3 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC3C0281DD7BFDF000A44A3 /* Page.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -156,6 +157,7 @@
 		4DC3C01F1DD7B33C000A44A3 /* XCTest_Gherkin.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest_Gherkin.framework; path = Carthage/Build/iOS/XCTest_Gherkin.framework; sourceTree = "<group>"; };
 		4DC3C0241DD7BB0C000A44A3 /* ContactListPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactListPage.swift; sourceTree = "<group>"; };
 		4DC3C0261DD7BB17000A44A3 /* ContactDetailsPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactDetailsPage.swift; sourceTree = "<group>"; };
+		4DC3C0281DD7BFDF000A44A3 /* Page.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -321,6 +323,7 @@
 			children = (
 				4DC3C0241DD7BB0C000A44A3 /* ContactListPage.swift */,
 				4DC3C0261DD7BB17000A44A3 /* ContactDetailsPage.swift */,
+				4DC3C0281DD7BFDF000A44A3 /* Page.swift */,
 			);
 			name = Page;
 			sourceTree = "<group>";
@@ -506,6 +509,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4DC3C0151DD7B2FB000A44A3 /* ContactListUITests.swift in Sources */,
+				4DC3C0291DD7BFDF000A44A3 /* Page.swift in Sources */,
 				4DC3C0271DD7BB17000A44A3 /* ContactDetailsPage.swift in Sources */,
 				4DC3C0251DD7BB0C000A44A3 /* ContactListPage.swift in Sources */,
 			);
